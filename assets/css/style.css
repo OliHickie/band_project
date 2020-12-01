@@ -14,8 +14,13 @@ font-family: 'Roboto Slab', serif; */
 
 /*--------------------- Nav Bar */
 
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .navbar-logo {
@@ -61,7 +66,7 @@ font-family: 'Roboto Slab', serif; */
     max-width: 600px;
     display: block;
     margin:  0 auto;
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 25px;
 }
 
@@ -79,15 +84,13 @@ font-family: 'Roboto Slab', serif; */
     width: 80%;
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 .home-img-container {
-    
+    margin-top: 5%;
 }
 
 /*--------------------- Buttons */
-
 
 .btn-cta {
     background-color: #ff1bce;
@@ -97,6 +100,7 @@ font-family: 'Roboto Slab', serif; */
     letter-spacing: 0.5px;
     padding: 10px;
     border-color: #ff1bce;
+    margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 7.5%;
     text-transform: uppercase;
@@ -125,19 +129,25 @@ font-family: 'Roboto Slab', serif; */
 
 /*--------------------- Footer */
 
-.social-icons {
-    display: inline-block;
-    text-align: justify;
+.social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 20px auto;  
+    font-size: 200%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .social-icons-list {
+        width: 90%;
+    }
 }
 
 .fab {
     color: #ff1bce;
-    font-size: 300%;
-    padding: 30px;
 }
 
 .footer {
     background-color: #202020;
-    padding-top: 60px;
-    height: 100%;
 }
