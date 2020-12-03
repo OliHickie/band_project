@@ -12,62 +12,102 @@ font-family: 'Roboto Slab', serif; */
     background-color: #202020;
 }
 
-/*--------------------- Nav Bar */
+/*--------------------- Bootstrap */
 
-.container-fluid {
+.row {
     margin: 0;
     padding: 0;
 }
+ 
+/*--------------------- Social Footer */
 
-.navbar {
+.white-line-short {
+    width: 20%;
+    min-width: 200px;
     background-color: #fafafa;
+    border: solid 2px #fafafa; 
+    margin: 0 auto;
 }
+
+/*--------------------- Nav Bar */
 
 .navbar-logo {
     height: 100px;
     padding: 5px;
 }
 
-.nav-items li {
-    list-style-type: none;
-}
-
-.nav-section {
-    margin: 0 auto;
-}
-
 .nav-item {
-    display: inline;
-}
-
-.nav-link-text {
-    color: #ea6ded;
     font-family:'Raleway', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 150%;
     margin-left: 25px;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fafafa;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    border-bottom: solid 2px #ff1bce;
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-toggler {
+    background-color: #ff1bce;
+    border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff1bce;
+    font-weight: 600;
+}
+
 /*--------------------- Quotes */
 
-.index-page-quote {
+.pink-page-quote {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     color: #ff1bce;
-    padding-top: 25px;
+    padding: 25px 0px;
+    letter-spacing: 1px;
+    font-size: 125%;
+}
+
+.white-page-quote {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #ff1bce;
+    padding: 25px 0px;
     letter-spacing: 1px;
     font-size: 125%;
 }
 
 /*--------------------- Home Page */
 
+.main-container {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0;
+}
+
+.left-content-container {
+    display: flex;
+    align-content: space-around;
+}
+
 .hero-logo {
     width: 75%;
     max-width: 600px;
+    min-width: 150px;
     display: block;
     margin:  0 auto;
     padding-top: 60px;
     padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-logo {
+        display: none;
+    }
 }
 
 .tagline {
@@ -75,72 +115,63 @@ font-family: 'Roboto Slab', serif; */
     font-weight: 400;
     color: #ff1bce;
     text-align: center;
-    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 150%;
     text-shadow: 0px 0px 1.5px #fafafa;
 }
 
 .home-img {
     width: 80%;
+    max-width: 500px;
     display: block;
     margin: 0 auto;
 }
 
 .home-img-container {
-    margin-top: 5%;
+    margin-top: 90px;
+    display: flex;
+    align-items: flex-end;
 }
 
-/*--------------------- Buttons */
+
+/*--------------------- Home Buttons */
 
 .btn-cta {
-    background-color: #ff1bce;
     display: inline-block;
+    background-color: #ff1bce;
+    color: #fafafa;
     font-family: "Roboto Slab", sans-serif;
+    text-transform: uppercase;
     font-size: 100%;
     letter-spacing: 0.5px;
     padding: 10px;
     border-color: #ff1bce;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 7.5%;
-    text-transform: uppercase;
-}
-
-.btn-cta a {
-    text-transform: uppercase;
-    color: #fafafa;
-}
-
-.btn-cta a:hover {
+    border-radius: 5%;
     text-decoration: none;
+    margin: 30px 10px 0px 10px;
 }
 
 .btn-cta:hover {
-    font-weight: 900;
-    text-shadow: 0px 0px 4px #202020;
+    text-decoration: none;
+    color:#ff1bce;
+    background-color: #fafafa;
+} 
 
-}
 
-.btn-container {
-    word-spacing: 30px;
-    margin-top: 30px;
-    height: 100%;
-}
-
-/*--------------------- Footer */
+/*--------------------- Social Footer */
 
 .social-icons-list {
     display: flex;
     justify-content: space-between;
     width: 33%;
-    margin: 20px auto;  
+    margin: 0 auto;  
     font-size: 200%;
-    
 }
 
 @media screen and (max-width: 768px) {
     .social-icons-list {
-        width: 90%;
+        width: 70%;
+        font-size: 150%;
     }
 }
 
@@ -150,4 +181,11 @@ font-family: 'Roboto Slab', serif; */
 
 .footer {
     background-color: #202020;
+    padding: 30px 0px;
+    position: sticky;
+    bottom: 0;
+}
+
+.fab:hover {
+    color: #fafafa;
 }

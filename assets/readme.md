@@ -37,5 +37,9 @@ This is a website for a group named Oompah Brass. They are a five piece brass gr
 
 
 changes/bugs:
+Index page:
 changed bg color of index as solid black was too flat. Slightly, off-black made imgs stand out more.
 social icons were too lrg for phone view - added media query. 
+nav bar toggler not displaying menu when clicked - hadn't added the jQuery tags at the bottom of the page
+white section appearing down RHS of page - clear padding and margin on .row and remove font weight change to buttons. Also, changed homep page buttons to just links. 
+Changed Nav bar location and added logo to nav bar. Kept Nav items to the left as didnt look right when centered and having logo on left. 
