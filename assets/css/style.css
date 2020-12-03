@@ -58,7 +58,7 @@ font-family: 'Roboto Slab', serif; */
 
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ff1bce;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /*--------------------- Quotes */
@@ -72,13 +72,15 @@ font-family: 'Roboto Slab', serif; */
     font-size: 125%;
 }
 
-.white-page-quote {
+.contact-page-quote {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    color: #ff1bce;
+    font-weight: 800;
+    color: #fafafa;
     padding: 25px 0px;
     letter-spacing: 1px;
     font-size: 125%;
+    background-color: rgba(255, 27, 206,0.5);
+    width: 100%
 }
 
 /*--------------------- Home Page */
@@ -104,12 +106,6 @@ font-family: 'Roboto Slab', serif; */
     padding-bottom: 25px;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-logo {
-        display: none;
-    }
-}
-
 .tagline {
     font-family: "Roboto Slab", sans-serif;
     font-weight: 400;
@@ -133,6 +129,11 @@ font-family: 'Roboto Slab', serif; */
     align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+    .hero-logo {
+        display: none;
+    }
+}
 
 /*--------------------- Home Buttons */
 
@@ -168,13 +169,6 @@ font-family: 'Roboto Slab', serif; */
     font-size: 200%;
 }
 
-@media screen and (max-width: 768px) {
-    .social-icons-list {
-        width: 70%;
-        font-size: 150%;
-    }
-}
-
 .fab {
     color: #ff1bce;
 }
@@ -188,4 +182,49 @@ font-family: 'Roboto Slab', serif; */
 
 .fab:hover {
     color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+    .social-icons-list {
+        width: 70%;
+        font-size: 150%;
+    }
+}
+/*--------------------- Contact Page */
+
+.contact-bg-img {
+    background: url("/assets/images/oompah-exeter2.jpg") center center no-repeat;
+    background-size: cover;
+    background-color: #202020;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-height: 20%;
+}
+
+.contact-bg-img h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 500%;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-shadow: 0px 0px 10px #ff1bce;
+}
+
+.contact-heading {
+    background-color: #202020;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-bg-img {
+        height: 150px;
+    }
+    .contact-page-quote {
+        display: none;
+    }
+    .contact-bg-img h1 {
+        font-size: 300%;
+    }
 }
