@@ -10,6 +10,7 @@ font-family: 'Roboto Slab', serif; */
 
 .bg-color-black {
     background-color: #202020;
+    margin: 0;
 }
 
 /*--------------------- Bootstrap */
@@ -24,13 +25,17 @@ font-family: 'Roboto Slab', serif; */
 .white-line-short {
     width: 20%;
     min-width: 200px;
-    background-color: #fafafa;
     border: solid 2px #fafafa; 
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 /*--------------------- Nav Bar */
 
+.navbar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
 .navbar-logo {
     height: 100px;
     padding: 5px;
@@ -51,14 +56,8 @@ font-family: 'Roboto Slab', serif; */
     font-weight: 600;
 }
 
-.navbar-dark .navbar-toggler {
-    background-color: #ff1bce;
-    border: none;
-}
-
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ff1bce;
-    /* font-weight: 600; */
 }
 
 /*--------------------- Quotes */
@@ -86,8 +85,6 @@ font-family: 'Roboto Slab', serif; */
 /*--------------------- Home Page */
 
 .main-container {
-    margin-top: 45px;
-    margin-bottom: 45px;
     padding: 0;
 }
 
@@ -114,6 +111,7 @@ font-family: 'Roboto Slab', serif; */
     padding-bottom: 30px;
     font-size: 150%;
     text-shadow: 0px 0px 1.5px #fafafa;
+    margin-top: 30px;
 }
 
 .home-img {
@@ -175,7 +173,7 @@ font-family: 'Roboto Slab', serif; */
 
 .footer {
     background-color: #202020;
-    padding: 30px 0px;
+    padding: 30px 0px 45px 0px;
     position: sticky;
     bottom: 0;
 }
@@ -190,19 +188,69 @@ font-family: 'Roboto Slab', serif; */
         font-size: 150%;
     }
 }
+/*--------------------- Media Page */
+
+.media-titles {
+    font-family: "Roboto Slab", sans-serif;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 45px;
+    text-shadow: 0px 0px 10px #ff1bce;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 45px 20px 0px 20px;
+}
+
+.img-container {
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.img-width {
+    width: 35%;
+    min-width: 300px;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-control-next {
+        right: 15%;
+    }
+    .carousel-control-prev {
+        left: 15%;
+    }
+}
+
+.soundcloud-container {
+    display: flex;
+    justify-content: center;
+}
+
+.soundcloud-window {
+    width: 50%;
+    min-width: 300px;
+    padding-top: 45px;
+}
+
 /*--------------------- Contact Page */
 
 .contact-bg-img {
     background: url("/assets/images/oompah-exeter2.jpg") center center no-repeat;
     background-size: cover;
     background-color: #202020;
-    height: 250px;
     width: 100%;
     overflow: hidden;
-    margin: 0;
     padding: 0;
     max-height: 20%;
+    margin-top: 126px;
 }
+
 
 .contact-bg-img h1 {
     font-family: "Roboto Slab", sans-serif;
@@ -211,13 +259,14 @@ font-family: 'Roboto Slab', serif; */
     text-transform: uppercase;
     padding-top: 30px;
     text-shadow: 0px 0px 10px #ff1bce;
+    letter-spacing: 3px;
 }
 
 .contact-heading {
     background-color: #202020;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .contact-bg-img {
         height: 150px;
     }
@@ -228,3 +277,36 @@ font-family: 'Roboto Slab', serif; */
         font-size: 300%;
     }
 }
+
+/*--------------------- Gig Page */
+
+.gig-item {
+    align-items: center;
+}
+
+.gigs-list {
+    color: #fafafa;
+    padding-top: 45px;
+}
+
+.gigs-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.gig-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px 15px;
+    display: inline-block;
+}
+
+.gig-description {
+    vertical-align: middle;
+    display:inline-block;
+    margin: 15px;
+}
+
