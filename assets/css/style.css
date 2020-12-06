@@ -33,7 +33,7 @@ font-family: 'Roboto Slab', serif; */
 
 .navbar {
     position: fixed;
-    z-index: 2;
+    z-index: 100;
     width: 100%;
 }
 .navbar-logo {
@@ -60,26 +60,52 @@ font-family: 'Roboto Slab', serif; */
     color: #ff1bce;
 }
 
-/*--------------------- Quotes */
+/*--------------------- Top Banner */
 
-.pink-page-quote {
+.banner-quote {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    color: #ff1bce;
-    padding: 25px 0px;
-    letter-spacing: 1px;
-    font-size: 125%;
-}
-
-.contact-page-quote {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     color: #fafafa;
     padding: 25px 0px;
     letter-spacing: 1px;
     font-size: 125%;
     background-color: rgba(255, 27, 206,0.5);
-    width: 100%
+    width: 100%;
+}
+
+.banner-bg-img {
+    background: url("/assets/images/oompah-exeter2.jpg") center center no-repeat;
+    background-size: cover;
+    background-color: #202020;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 126px;
+}
+
+.banner-bg-img h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 500%;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-shadow: 0px 0px 10px #ff1bce;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 576px) {
+    .banner-quote {
+        display: none;
+    }
+    .banner-bg-img {
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+    .banner-bg-img h1 {
+        font-size: 300%;
+        padding: 0;
+        margin: 0 auto;
+    }
 }
 
 /*--------------------- Home Page */
@@ -240,73 +266,55 @@ font-family: 'Roboto Slab', serif; */
 
 /*--------------------- Contact Page */
 
-.contact-bg-img {
-    background: url("/assets/images/oompah-exeter2.jpg") center center no-repeat;
-    background-size: cover;
-    background-color: #202020;
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    max-height: 20%;
-    margin-top: 126px;
-}
-
-
-.contact-bg-img h1 {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 500%;
-    color: #fafafa;
-    text-transform: uppercase;
-    padding-top: 30px;
-    text-shadow: 0px 0px 10px #ff1bce;
-    letter-spacing: 3px;
-}
-
-.contact-heading {
-    background-color: #202020;
-}
-
-@media screen and (max-width: 576px) {
-    .contact-bg-img {
-        height: 150px;
-    }
-    .contact-page-quote {
-        display: none;
-    }
-    .contact-bg-img h1 {
-        font-size: 300%;
-    }
-}
-
 /*--------------------- Gig Page */
 
-.gig-item {
-    align-items: center;
-}
-
 .gigs-list {
+    font-family: "Roboto Slab", sans-serif;
     color: #fafafa;
     padding-top: 45px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .gigs-list ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    
 }
 
-.gig-logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 30px 15px;
+.gigs-description {
     display: inline-block;
-}
-
-.gig-description {
-    vertical-align: middle;
-    display:inline-block;
     margin: 15px;
 }
 
+.fa-calendar-alt {
+    font-size: 300%;
+    margin: 10px;
+    color: #ff1bce;
+}
+
+.gigs-description p a { 
+    background-color: #ff1bce;
+    color: #fafafa;
+    font-family: "Roboto Slab", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px;
+    border-color: #ff1bce;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.gigs-description p a:hover {
+    color: #ff1bce;
+    background-color: #fafafa;
+}
+
+@media screen and (max-width: 576px) {
+    .gigs-item {
+        display: flex;
+        align-content: center; 
+    }
+    .fa-calendar-alt {
+        font-size: 200%;
+    }
+}
