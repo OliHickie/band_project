@@ -234,25 +234,21 @@ font-family: 'Roboto Slab', serif; */
 /*--------------------- About Page */
 
 .about-lrg-quote {
-    display: block;
-    position: relative;
+    display: flex;
+    align-items: center;
     font-family: "Raleway", sans-serif;
     letter-spacing: 3px;
     color: #fafafa;
     border-radius: 3%;
-    padding: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .about-quote-container {
-    position: absolute;
-    margin-top: 50%;
     border: 1px solid #ff1bce;
     border-radius: 5%;
-    padding: 15px;
-    /* margin-left: 30px;
-    margin-right: 30px; */
+    padding: 20px;
+    width: 60%;
+    min-width: 200px;
+    margin: 0 auto;
 }
 
 .about-lrg-quote h4 {
@@ -263,9 +259,19 @@ font-family: 'Roboto Slab', serif; */
     font-family: "Roboto Slab", sans-serif;
     color: #fafafa;
     font-weight: 300;
-    margin: 60px 15px;
+    font-size: large;
+    margin-top: 60px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.about-links {
+    color: #ff1bce;
+}
+
+.about-links:hover {
+    text-decoration: none;
+    color: rgba(255, 27, 206, 0.5)
 }
 
 .about-img {
@@ -274,9 +280,9 @@ font-family: 'Roboto Slab', serif; */
 }
 
 .about-img img {
-    width: 50%;
-    border-radius: 25%;
-    margin: 10px auto;
+    width: 60%;
+    border-radius: 3%;
+    margin: 0 auto;
     }
 
 @media screen and (max-width: 1200px) {
@@ -430,5 +436,5 @@ font-family: 'Roboto Slab', serif; */
     max-width: 600px;
     margin: 0 auto;
     border-radius: 5%;
-    box-shadow: 0px 0px 8px 8px #ff1bce;
+    box-shadow: 0px 0px 10px #fafafa;
 }
