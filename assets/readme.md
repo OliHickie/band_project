@@ -32,7 +32,7 @@ This is a website for a group named Oompah Brass. They are a five piece brass gr
   * Imagery
     Imagery is an important part of the website as it portrays the energy of the abdn at various gigs they have performed at. The home image is simple and clear of a background to emphasise the cleanliness of the page and not to detract from the two action buttons. On various other pages, fun imagery will be used at the top of the page as well as a gallery section on the media page. 
 
-  * Overall, the website is fairly simple in design with important funcitonal aspects easy to find and carry out, i.e. watch a promotional    video of the band or contact with an enquiry. 
+  * Overall, the website is fairly simple in design with important funcitonal aspects easy to find and carry out, i.e. watch a promotional video of the band or contact with an enquiry. 
 
 
 
@@ -45,3 +45,4 @@ white section appearing down RHS of page - clear padding and margin on .row and 
 Changed Nav bar location and added logo to nav bar. Kept Nav items to the left as didnt look right when centered and having logo on left. 
 photo icons was displaying above fixed nav bar - changed z-index to 100.
 As index.html doesnt have a page heading, the picture was disappearing. In order to keep using grouped css, i just added some inline styling. 
+Changed the format of the contact page to include a form.

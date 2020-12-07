@@ -190,16 +190,16 @@ font-family: 'Roboto Slab', serif; */
 }
 
 .home-img {
+    margin-top: 90px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-img img {
     width: 80%;
     max-width: 500px;
     display: block;
     margin: 0 auto;
-}
-
-.home-img-container {
-    margin-top: 90px;
-    display: flex;
-    align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
@@ -208,7 +208,7 @@ font-family: 'Roboto Slab', serif; */
     }
 }
 
-/*--------------------- Home Buttons */
+/*--------------------- Home buttons */
 
 .btn-cta {
     display: inline-block;
@@ -227,9 +227,66 @@ font-family: 'Roboto Slab', serif; */
 
 .btn-cta:hover {
     text-decoration: none;
-    color:#ff1bce;
+    color: #ff1bce;
     background-color: #fafafa;
 } 
+
+/*--------------------- About Page */
+
+.about-lrg-quote {
+    display: block;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 3px;
+    color: #fafafa;
+    border-radius: 3%;
+    padding: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.about-quote-container {
+    position: absolute;
+    margin-top: 50%;
+    border: 1px solid #ff1bce;
+    border-radius: 5%;
+    padding: 15px;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+}
+
+.about-lrg-quote h4 {
+    font-weight: 100;
+}
+
+.about-biography {
+    font-family: "Roboto Slab", sans-serif;
+    color: #fafafa;
+    font-weight: 300;
+    margin: 60px 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-img {
+    display: flex;
+    align-items: center;
+}
+
+.about-img img {
+    width: 50%;
+    border-radius: 25%;
+    margin: 10px auto;
+    }
+
+@media screen and (max-width: 1200px) {
+    .about-lrg-quote {
+        display: none;
+    }
+    .about-biography {
+        margin: 45px 0px;
+    }
+}
 
 /*--------------------- Media Page */
 
@@ -329,6 +386,7 @@ font-family: 'Roboto Slab', serif; */
 
 .contact-form {
     padding: 20px;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 .contact-form h3 {
@@ -370,7 +428,6 @@ font-family: 'Roboto Slab', serif; */
 .contact-img img {
     width: 70%;
     max-width: 600px;
-    /* display: block; */
     margin: 0 auto;
     border-radius: 5%;
     box-shadow: 0px 0px 8px 8px #ff1bce;
