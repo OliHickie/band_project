@@ -2,6 +2,13 @@
 Colors and fonts
 Pink
 #ff1bce
+rgb(255, 27, 206)
+
+white
+#fafafa
+
+black
+#202020
 
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto Slab', serif; */
@@ -18,15 +25,6 @@ font-family: 'Roboto Slab', serif; */
 .row {
     margin: 0;
     padding: 0;
-}
- 
-/*--------------------- Social Footer */
-
-.white-line-short {
-    width: 20%;
-    min-width: 200px;
-    border: solid 2px #fafafa; 
-    margin: 30px auto;
 }
 
 /*--------------------- Nav Bar */
@@ -108,6 +106,57 @@ font-family: 'Roboto Slab', serif; */
     }
 }
 
+/*--------------------- Subtitles */
+
+.page-subtitles {
+    font-family: "Roboto Slab", sans-serif;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 45px;
+    text-shadow: 0px 0px 10px #ff1bce;
+}
+
+/*--------------------- Social Footer */
+
+.social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 0 auto;  
+    font-size: 200%;
+}
+
+.fab {
+    color: #ff1bce;
+}
+
+.footer {
+    background-color: #202020;
+    padding: 30px 0px 45px 0px;
+    position: sticky;
+    bottom: 0;
+}
+
+.fab:hover {
+    color: #fafafa;
+}
+
+.white-line-short {
+    width: 20%;
+    min-width: 200px;
+    border: solid 2px #fafafa; 
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .social-icons-list {
+        width: 70%;
+        font-size: 150%;
+    }
+}
+
 /*--------------------- Home Page */
 
 .main-container {
@@ -182,49 +231,7 @@ font-family: 'Roboto Slab', serif; */
     background-color: #fafafa;
 } 
 
-
-/*--------------------- Social Footer */
-
-.social-icons-list {
-    display: flex;
-    justify-content: space-between;
-    width: 33%;
-    margin: 0 auto;  
-    font-size: 200%;
-}
-
-.fab {
-    color: #ff1bce;
-}
-
-.footer {
-    background-color: #202020;
-    padding: 30px 0px 45px 0px;
-    position: sticky;
-    bottom: 0;
-}
-
-.fab:hover {
-    color: #fafafa;
-}
-
-@media screen and (max-width: 768px) {
-    .social-icons-list {
-        width: 70%;
-        font-size: 150%;
-    }
-}
 /*--------------------- Media Page */
-
-.media-titles {
-    font-family: "Roboto Slab", sans-serif;
-    color: #fafafa;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 600;
-    padding-top: 45px;
-    text-shadow: 0px 0px 10px #ff1bce;
-}
 
 .video-container {
     display: flex;
@@ -264,8 +271,6 @@ font-family: 'Roboto Slab', serif; */
     padding-top: 45px;
 }
 
-/*--------------------- Contact Page */
-
 /*--------------------- Gig Page */
 
 .gigs-list {
@@ -273,12 +278,12 @@ font-family: 'Roboto Slab', serif; */
     color: #fafafa;
     padding-top: 45px;
     display: flex;
-    align-content: center;
     justify-content: space-around;
 }
 
 .gigs-list ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 
 .gigs-description {
@@ -295,12 +300,10 @@ font-family: 'Roboto Slab', serif; */
 .gigs-description p a { 
     background-color: #ff1bce;
     color: #fafafa;
-    font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 3px;
     border-color: #ff1bce;
-    border-radius: 5%;
     text-decoration: none;
 }
 
@@ -310,11 +313,65 @@ font-family: 'Roboto Slab', serif; */
 }
 
 @media screen and (max-width: 576px) {
-    .gigs-item {
-        display: flex;
-        align-content: center; 
+    .gigs-list {
+        justify-content: center;
+        text-align: center;
     }
     .fa-calendar-alt {
-        font-size: 200%;
+        font-size: 150%;
     }
+    .gigs-description p a {
+        display: block;
+    }
+}
+
+/*--------------------- Contact Page */
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form h3 {
+    margin-bottom: 30px;
+}
+
+.form-group { 
+    padding: 10px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+ .submit-btn button {
+    background-color: #ff1bce;
+    color: #fafafa;
+    font-family: "Roboto Slab", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-color: #ff1bce;
+    border-radius: 5%;
+}
+
+.submit-btn button:hover {
+    color:#ff1bce;
+    background-color: #fafafa;
+} 
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.contact-img img {
+    width: 70%;
+    max-width: 600px;
+    /* display: block; */
+    margin: 0 auto;
+    border-radius: 5%;
+    box-shadow: 0px 0px 8px 8px #ff1bce;
 }
