@@ -134,7 +134,8 @@ font-family: 'Roboto Slab', serif; */
 
 .footer {
     background-color: #202020;
-    padding: 30px 0px 45px 0px;
+    /* padding: 30px 0px 45px 0px; */
+    padding-bottom: 45px;
     position: sticky;
     bottom: 0;
 }
@@ -160,12 +161,12 @@ font-family: 'Roboto Slab', serif; */
 /*--------------------- Home Page */
 
 .main-container {
-    padding: 0;
+    /* padding: 0; */
 }
 
 .left-content-container {
-    display: flex;
-    align-content: space-around;
+    /* display: flex; */
+    /* align-content: space-around; */
 }
 
 .hero-logo {
@@ -180,13 +181,12 @@ font-family: 'Roboto Slab', serif; */
 
 .tagline {
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 400;
     color: #ff1bce;
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 30px;
     padding-bottom: 30px;
     font-size: 150%;
-    text-shadow: 0px 0px 1.5px #fafafa;
-    margin-top: 30px;
+    /* text-shadow: 0px 0px 1.5px #fafafa; */
 }
 
 .home-img {
@@ -198,7 +198,7 @@ font-family: 'Roboto Slab', serif; */
 .home-img img {
     width: 80%;
     max-width: 500px;
-    display: block;
+    /* display: block; */
     margin: 0 auto;
 }
 
@@ -216,17 +216,17 @@ font-family: 'Roboto Slab', serif; */
     color: #fafafa;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
-    font-size: 100%;
+    /* font-size: 100%; */
     letter-spacing: 0.5px;
     padding: 10px;
-    border-color: #ff1bce;
+    /* border-color: #ff1bce; */
     border-radius: 5%;
-    text-decoration: none;
+    /* text-decoration: none; */
     margin: 30px 10px 0px 10px;
 }
 
 .btn-cta:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #ff1bce;
     background-color: #fafafa;
 } 
@@ -251,7 +251,7 @@ font-family: 'Roboto Slab', serif; */
     margin: 0 auto;
 }
 
-.about-lrg-quote h4 {
+.about-lrg-quote h3 {
     font-weight: 100;
 }
 
@@ -261,6 +261,7 @@ font-family: 'Roboto Slab', serif; */
     font-weight: 300;
     font-size: large;
     margin-top: 60px;
+    margin-bottom: 45px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -271,7 +272,7 @@ font-family: 'Roboto Slab', serif; */
 
 .about-links:hover {
     text-decoration: none;
-    color: rgba(255, 27, 206, 0.5)
+    color: rgba(255, 27, 206, 0.6)
 }
 
 .about-img {
@@ -282,7 +283,8 @@ font-family: 'Roboto Slab', serif; */
 .about-img img {
     width: 60%;
     border-radius: 3%;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #fafafa;
     }
 
 @media screen and (max-width: 1200px) {
@@ -332,6 +334,7 @@ font-family: 'Roboto Slab', serif; */
     width: 50%;
     min-width: 300px;
     padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 /*--------------------- Gig Page */
@@ -339,7 +342,7 @@ font-family: 'Roboto Slab', serif; */
 .gigs-list {
     font-family: "Roboto Slab", sans-serif;
     color: #fafafa;
-    padding-top: 45px;
+    padding-top: 60px;
     display: flex;
     justify-content: space-around;
 }
@@ -365,8 +368,9 @@ font-family: 'Roboto Slab', serif; */
     color: #fafafa;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    padding: 3px;
+    padding: 3px 5px;
     border-color: #ff1bce;
+    border-radius: 6%;
     text-decoration: none;
 }
 
@@ -385,6 +389,7 @@ font-family: 'Roboto Slab', serif; */
     }
     .gigs-description p a {
         display: block;
+        margin: 2px 60px;
     }
 }
 
@@ -403,6 +408,10 @@ font-family: 'Roboto Slab', serif; */
     padding: 10px;
 }
 
+textarea {
+    resize: none;
+}
+
 .submit-btn {
     display: flex;
     justify-content: center;
@@ -415,6 +424,7 @@ font-family: 'Roboto Slab', serif; */
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px;
+    margin-top: 10px;
     border-color: #ff1bce;
     border-radius: 5%;
 }
@@ -427,7 +437,7 @@ font-family: 'Roboto Slab', serif; */
 .contact-img {
     display: flex;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
