@@ -72,7 +72,7 @@ font-family: 'Roboto Slab', serif; */
 }
 
 .banner-bg-img {
-    background: url("/assets/images/oompah-exeter2.jpg") center center no-repeat;
+    background: url("../images/oompah-exeter2.jpg") center center no-repeat;
     background-size: cover;
     background-color: #202020;
     overflow: hidden;
