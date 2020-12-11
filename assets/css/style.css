@@ -134,7 +134,6 @@ font-family: 'Roboto Slab', serif; */
 
 .footer {
     background-color: #202020;
-    /* padding: 30px 0px 45px 0px; */
     padding-bottom: 45px;
     position: sticky;
     bottom: 0;
@@ -160,15 +159,6 @@ font-family: 'Roboto Slab', serif; */
 
 /*--------------------- Home Page */
 
-.main-container {
-    /* padding: 0; */
-}
-
-.left-content-container {
-    /* display: flex; */
-    /* align-content: space-around; */
-}
-
 .hero-logo {
     width: 75%;
     max-width: 600px;
@@ -182,11 +172,9 @@ font-family: 'Roboto Slab', serif; */
 .tagline {
     font-family: "Roboto Slab", sans-serif;
     color: #ff1bce;
-    /* text-align: center; */
     margin-top: 30px;
     padding-bottom: 30px;
     font-size: 150%;
-    /* text-shadow: 0px 0px 1.5px #fafafa; */
 }
 
 .home-img {
@@ -198,7 +186,6 @@ font-family: 'Roboto Slab', serif; */
 .home-img img {
     width: 80%;
     max-width: 500px;
-    /* display: block; */
     margin: 0 auto;
 }
 
@@ -216,17 +203,14 @@ font-family: 'Roboto Slab', serif; */
     color: #fafafa;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
-    /* font-size: 100%; */
     letter-spacing: 0.5px;
     padding: 10px;
-    /* border-color: #ff1bce; */
     border-radius: 5%;
-    /* text-decoration: none; */
     margin: 30px 10px 0px 10px;
 }
 
 .btn-cta:hover {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: #ff1bce;
     background-color: #fafafa;
 } 
@@ -316,15 +300,6 @@ font-family: 'Roboto Slab', serif; */
     margin: 0 auto;
 }
 
-@media screen and (min-width: 576px) {
-    .carousel-control-next {
-        right: 15%;
-    }
-    .carousel-control-prev {
-        left: 15%;
-    }
-}
-
 .soundcloud-container {
     display: flex;
     justify-content: center;
@@ -336,8 +311,16 @@ font-family: 'Roboto Slab', serif; */
     padding-top: 45px;
     padding-bottom: 45px;
 }
+@media screen and (min-width: 576px) {
+    .carousel-control-next {
+        right: 15%;
+    }
+    .carousel-control-prev {
+        left: 15%;
+    }
+}
 
-/*--------------------- Gig Page */
+/*--------------------- Gigs Page */
 
 .gigs-list {
     font-family: "Roboto Slab", sans-serif;
@@ -349,7 +332,7 @@ font-family: 'Roboto Slab', serif; */
 
 .gigs-list ul {
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
 }
 
 .gigs-description {
@@ -369,7 +352,6 @@ font-family: 'Roboto Slab', serif; */
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 3px 5px;
-    border-color: #ff1bce;
     border-radius: 6%;
     text-decoration: none;
 }
@@ -421,11 +403,11 @@ textarea {
     background-color: #ff1bce;
     color: #fafafa;
     font-family: "Roboto Slab", sans-serif;
+    border: none;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px;
     margin-top: 10px;
-    border-color: #ff1bce;
     border-radius: 5%;
 }
 
