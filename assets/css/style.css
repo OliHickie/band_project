@@ -217,18 +217,17 @@ font-family: 'Roboto Slab', serif; */
 
 /*--------------------- About Page */
 
-.about-lrg-quote {
+.about-lrg-quote { 
     display: flex;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 3px;
-    color: #fafafa;
-    border-radius: 3%;
+     align-items: center;
 }
 
 .about-quote-container {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 3px;
+    color: #fafafa;
     border: 1px solid #ff1bce;
-    border-radius: 5%;
+    border-radius: 3%;
     padding: 20px;
     width: 60%;
     min-width: 200px;
@@ -274,7 +273,17 @@ font-family: 'Roboto Slab', serif; */
 
 @media screen and (max-width: 1200px) {
     .about-lrg-quote {
-        display: none;
+        order: 2;
+    }
+    .about-quote-container {
+        margin-top: 30px;
+    }
+    .about-subquote {
+        font-size: 16px;
+    }
+    .about-img img {
+        max-height: 300px;
+        width: auto;
     }
     .about-biography {
         margin: 45px 0px;
