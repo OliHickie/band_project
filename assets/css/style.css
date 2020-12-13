@@ -235,8 +235,9 @@ font-family: 'Roboto Slab', serif; */
     margin: 0 auto;
 }
 
-.about-lrg-quote h3 {
-    font-weight: 100;
+.about-subquote {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .about-biography {
