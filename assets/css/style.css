@@ -338,7 +338,7 @@ font-family: 'Roboto Slab', serif; */
     justify-content: space-around;
 }
 
-.gigs-list ul {
+.gigs-list ol {
     list-style-type: none;
     padding-inline-start: 0;
 }
