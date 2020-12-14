@@ -118,7 +118,11 @@ font-family: 'Roboto Slab', serif; */
     text-shadow: 0px 0px 10px #ff1bce;
 }
 
-/*--------------------- Social Footer */
+/*--------------------- Footer */
+.footer {
+    background-color: #202020;
+    padding-bottom: 45px;
+}
 
 .social-icons-list {
     display: flex;
@@ -130,13 +134,6 @@ font-family: 'Roboto Slab', serif; */
 
 .fab {
     color: #ff1bce;
-}
-
-.footer {
-    background-color: #202020;
-    padding-bottom: 45px;
-    position: sticky;
-    bottom: 0;
 }
 
 .fab:hover {
