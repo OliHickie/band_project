@@ -24,17 +24,12 @@ This is a website for a group named **Oompah Brass**. They are a five piece bras
     - View inspiring photos designed to encourage bookings.
 
   - As a fan of the band visiting the website I want them to:
-    - Be able to listen to music recorded by the band.
-    - Easily navigate to social media pages and the band store to purchase music. 
-    - View a list of upcoming gigs that members of the public are able to go and watch. 
+    - Be able to listen to music published by the band.
+    - Easily navigate to social media pages in serparate windows. 
+    - View a list of upcoming gigs that members of the public are able to go and watch.
+    - Follow links to venues of live gigs for more information. 
 
-  - I anticipate two different users for the website. Firstly, the perspective client who is looking to hire the band, and secondly, the follower, who is a fan of the band and looking to see when they are next playing.
-  - A first-time visitor should find this website clean, clear and concise offering a great first impression of the band.
-  - All visitors should navigate easily between the pages using the navigation bar and integrated buttons. 
-  - Perspective clients will be able to find out about the band, see and hear examples of their work and enquire about booking them.
-  - Followers of the band will be able to find a list of upcoming gigs they are able to go and watch and follow links to the band's social media pages from any page on the site. 
-
-### Project goals
+## Project goals
 
   - The client wants a website that represents the bands fun and energetic but professional brand. 
   - The website will display examples of the band's work through videos, photos and tracks. 
