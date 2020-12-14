@@ -1,12 +1,32 @@
-# _Website for a band_
+# Website for a band
 
-[View Project Here](#)
+![An image of the website's homepage displayed on a monitor, laptop, ipad and mobile device](assets/images/readme/amiresponsive.png)
 
-This is a website for a group named Oompah Brass. They are a five piece brass group whose varied gigs include regular residences, large oktoberfest events, weddings and corporate functions. Their show, which generally includes upbeat pop covers, is upbeat, energetic and fun, and I want to build a website that represents this. 
+------
 
-## User Experience (UX)
+&#127930;&emsp; [View Project Here](https://olihickie.github.io/band_project/)&emsp;&#127930;
 
-### Visitor goals
+&#x1F3B5;&emsp; [View GitHub Repository Here](https://github.com/OliHickie/band_project)&emsp;&#x1F3B5;
+
+This is a website for a group named **Oompah Brass**. They are a five piece brass group whose varied gigs include regular residences, large oktoberfest events, weddings and corporate functions. Their show, which generally includes upbeat pop covers, is upbeat, energetic and fun and the overall aim of their website is to reflect this.
+
+# User Experience (UX)
+
+## User Stories
+
+  - As a potential client visiting the website I want them to:
+    - Navigate their way around the website without any help or confusion. 
+    - Get a good first impression of the band, that of being both fun and professional. 
+    - From the homepage, be able to quickly navigate to a promotional video and a way of contacting the band.  
+    - Read a bit about the band, their acheivements, collaborations and past performances. 
+    - Read various testimonials from well-known people offering their opinion of the band. 
+    - View all external links in a separate window so as to not get taken away from the website. 
+    - View inspiring photos designed to encourage bookings.
+
+  - As a fan of the band visiting the website I want them to:
+    - Be able to listen to music recorded by the band.
+    - Easily navigate to social media pages and the band store to purchase music. 
+    - View a list of upcoming gigs that members of the public are able to go and watch. 
 
   - I anticipate two different users for the website. Firstly, the perspective client who is looking to hire the band, and secondly, the follower, who is a fan of the band and looking to see when they are next playing.
   - A first-time visitor should find this website clean, clear and concise offering a great first impression of the band.
