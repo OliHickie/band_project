@@ -358,18 +358,18 @@ font-family: 'Roboto Slab', serif; */
 }
 
 .gigs-description p a { 
-    background-color: #ff1bce;
-    color: #fafafa;
-    text-transform: uppercase;
+    /* background-color: #ff1bce; */
+    color: #ff1bce;
+    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
-    padding: 3px 5px;
-    border-radius: 6%;
+    /* padding: 3px 5px; */
+    /* border-radius: 6%; */
     text-decoration: none;
 }
 
 .gigs-description p a:hover {
-    color: #ff1bce;
-    background-color: #fafafa;
+    color: rgba(255, 27, 206, 0.6)
+    /* background-color: #fafafa; */
 }
 
 @media screen and (max-width: 576px) {
