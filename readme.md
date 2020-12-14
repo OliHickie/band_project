@@ -1,6 +1,9 @@
 # Website for a band
 
+
 ![An image of the website's homepage displayed on a monitor, laptop, ipad and mobile device](assets/images/readme/amiresponsive.png)
+
+
 
 ------
 
