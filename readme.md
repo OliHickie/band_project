@@ -38,7 +38,7 @@ This is a website for a group named **Oompah Brass**. They are a five piece bras
     
     The three main colours used for the website are white, black and a bright pink, which links in with the bands costume (for corporate events) and business cards. The bright pink also offers a vibrant contrast against both white and black which makes key elements stand out. The use of a black background not only gives a professional look but is also easier on the eyes.
 
-    ![Pink - #ff1bce](assets/images/readme/hex-pink.png) ![White - #fafafa](assets/images/readme/hex-white.png) ![Black - #202020](assets/images/readme/hex-black.png) 
+    ![Pink - #ff1bce](assets/images/readme/hex-pink.png | width) ![White - #fafafa](assets/images/readme/hex-white.png) ![Black - #202020](assets/images/readme/hex-black.png) 
 
   - Typography 
     
@@ -91,7 +91,7 @@ This is a website for a group named **Oompah Brass**. They are a five piece bras
 - **Header** The header is the came across all five pages, the only difference being the active page being bold and underlined. The header consists of the band logo on the left hand side, which also links to the home page. There are also five navigational links to each page which change to a pink colour when hovered over. This navigation bar collapses into a hamburger button on mobile devices. The Navigation bar is in a fixed position and always visable to allow for quick and easy access to other pages. 
 - **Banner** A background image has been used consistantly across all five pages. On this, there is a quote highlighted by a light pink banner. This quote changes on each page along with the title of the page. The quote disappears on mobile devices to avoid the top of the page looking too overcrowded. 
 - **Footer** The footer section is in a sticky position at the bottom of the page. This was done using Bootstrap classes. It houses five navigations links to social media pages which open in a separate window. These icons change colour when the mouse hover over them.
-- **Home Page** The home page includes two links that look like buttons. These navigate to the media page and contact page for quick and obvious access. They react when hovered over for better UX. 
+- **Home Page** The home page includes two links that look like buttons. These navigate to the media page and contact page for quick and obvious access. They react when hovered over for better UX. The large logo has been removed for smaller devices as it was not deemed necessary to repeat the logo so close to the navigation bar. 
 - **About Page** The biography is both informative and functional. Within the text are links to internal pages and external pages in seperate windows. They change colour slightly when hovering over the words and are written in the sites pink colour to highlight them. 
 - **Media Page** The media page consists of three seperate sections. A video embedded from YouTube, a Bootstrap caarousel and a playlist of music embedded from Soundcloud. 
 - **Gigs Page** As well as a list of upcoming gigs, there are also external links to venue sites which open in a separate browser. 
@@ -120,25 +120,39 @@ Going forward, I would like to include
     
 # Testing
 
+## Functionality Testing 
 
+  - **Header** 
+    - When the logo in the top left corner of the page is clicked, it takes you back to the home page for any of the five pages. This has been tested on a computer and mobile device. 
+    - All page links work and stay active when clicked. 
+    - On mobile devices, the navigation bar collapses into a button which, when clicked, drops down and displays the page links. 
+    - The Navigation bar is always at the top of the page and is  visable when scrolling down the page.
+  - **Footer** 
+    - The footer contains five social media icons. These each lead to external pages in a new window and has been tested on computer and mobile devices.
+    - The footer is stuck to the bottom of the page and was tested by temporarily removing page material. 
+  - **Buttons/Links** 
+    - All internal links were tested on desktop and mobile to check that they navigate to the correct page. The media link in the biography leads to the music section at the bottom of the media page. 
+    - All external links were tested on desktop and mobile and ensured that they opened in new tabs. 
+  - **Media Page** 
+    - The video was tested on the media page on verious different screen sizes to check that it played and was repsonsive.
+    - The images on the carousel automatically rotate and can be moved manually using the arrows and the bars at the bottom of the screen. 
+    - The soundcloud playlist plays when clicked and can be controlled using buttons within the window. 
+  - **Form** 
+    - The form deletes it's placeholder text when you start to write content in a a box. 
+    - You cannot submit the form unless all three boxes have content. 
 
+## Validation
 
+### CSS3 
 
+The ol items on the Gigs page were slightly off-centre and this was clearly visable when in mobile view. Using DevTools, I located a Bootstrap style of 'padding-inline-start' being set to 40px. However, cancelling this out in my style.css has caused an error in my validation check. 40px
+### HTML 
 
-
-## Testing
-
-Throughout the building process, I regularly checked my code on desktop, ipad and mobile screens. Some errors that occureed are documented below:
-
-  - The navigation button appeared when in mobile format, however, when clicked, the menu didn't appear. I then realised I hadn't added the jQuery tags needed and inserted them at the bottom of the page. 
-  - Some white lines would appear round the edge of the page. Often this would be corrected by clearing the margin and padding of bootstrap classes. 
-  - Whe scrolling down the media page, the navigation buttons for the carousel would appear above the nav bar. To rectify this, I gave the Nav bar a z-index of 100 (1 and 10 were too low a number).
-  - The ul items on the Gigs page were slightly off-centre, which was especially visable when in mobile view. Using DevTools, I located a Bootstrap style of 'padding-inline-start' being set to 40px, which I cancelled out in my style.css page. 
-
+When using the [HTML Validator](https://validator.w3.org/), all code passed without errors. 
 
 ### Lighthouse
 
-I conducted tests using the Lighthouse feature on Chrome DevTools and after analysing the results, I made the following changes.
+I conducted tests using the [Lighthouse](https://developers.google.com/web/tools/lighthouse) feature on Chrome DevTools and after analysing the results, I made the following changes.
   - I added a meta description to the 'head' section of each page to summarise the page for the benefit of search engines. 
   - I added text to the social media icons for screen readers. 
   - I added rel="noopener" to all external links to ensure I don't expose the site to performance or security issues. 

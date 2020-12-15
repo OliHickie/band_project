@@ -216,7 +216,7 @@ font-family: 'Roboto Slab', serif; */
 
 .about-lrg-quote { 
     display: flex;
-     align-items: center;
+    align-items: center;
 }
 
 .about-quote-container {
@@ -244,7 +244,6 @@ font-family: 'Roboto Slab', serif; */
     margin-top: 60px;
     margin-bottom: 45px;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .about-links {
@@ -296,6 +295,10 @@ font-family: 'Roboto Slab', serif; */
     padding: 45px 20px 0px 20px;
 }
 
+.video-container iframe {
+    border: none;
+}
+
 .img-container {
     margin: 0 auto;
     padding-top: 45px;
@@ -311,6 +314,10 @@ font-family: 'Roboto Slab', serif; */
 .soundcloud-container {
     display: flex;
     justify-content: center;
+}
+
+.soundcloud-container iframe {
+    border: none;
 }
 
 .soundcloud-window {
@@ -340,7 +347,7 @@ font-family: 'Roboto Slab', serif; */
 
 .gigs-list ol {
     list-style-type: none;
-    padding-inline-start: 0;
+    /* padding-inline-start: 0px; */
 }
 
 .gigs-description {
@@ -355,21 +362,16 @@ font-family: 'Roboto Slab', serif; */
 }
 
 .gigs-description p a { 
-    /* background-color: #ff1bce; */
     color: #ff1bce;
-    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
-    /* padding: 3px 5px; */
-    /* border-radius: 6%; */
     text-decoration: none;
 }
 
 .gigs-description p a:hover {
     color: rgba(255, 27, 206, 0.6)
-    /* background-color: #fafafa; */
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .gigs-list {
         justify-content: center;
         text-align: center;
@@ -380,6 +382,9 @@ font-family: 'Roboto Slab', serif; */
     .gigs-description p a {
         display: block;
         margin: 2px 60px;
+    }
+    .gigs-description {
+        display: block;
     }
 }
 
