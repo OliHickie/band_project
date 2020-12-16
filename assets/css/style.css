@@ -347,7 +347,7 @@ font-family: 'Roboto Slab', serif; */
 
 .gigs-list ol {
     list-style-type: none;
-    /* padding-inline-start: 0px; */
+    padding: 0;
 }
 
 .gigs-description {
