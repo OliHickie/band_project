@@ -197,6 +197,10 @@ Overall, this helped improve the performance, accessibility, best practices and 
     - View a list of upcoming gigs that members of the public are able to go and watch. _A list of gigs is available on the Gigs page which is easily accessible via the navigation bar._
     - Follow links to venues of live gigs for more information. _The list items also include links to venue websites for more information._
 
+# Observations
+
+At the beginning of the project good git work flow wasn't adhered to. After some advice from my mentor, I used the commit function more regularly and when large changes and continued to do so. 
+
 # Deployment
 
 The site was deployed using [GitHub Pages](https://pages.github.com/) using the following steps. 
@@ -224,13 +228,14 @@ To clone the site follow the steps below.
   - I used the following sites as inspiration; 
     - [Oompah Brass](https://oompahbrass.com/)
     - [Backchat Brass](https://backchatbrass.com/)
+    - [Awwwards](https://www.awwwards.com/)
 
   - I used the following documents to help with my README file
     - [Code Institute README Template](https://github.com/Code-Institute-Solutions/readme-template)
     - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
     - [Boredom Guide README](https://github.com/LigaMoon/Boredom-guide)
 
-I would also like to thank my Mentor for his continued support and help on this project, and the Code Institute Tutor team for their help when working on this site. 
+I would like to thank my Mentor for his continued support and help on this project, and the Code Institute Tutor team for their help when working on this site. 
 
 
 
